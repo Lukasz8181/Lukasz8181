@@ -10,3 +10,8 @@
 Lukasz8181/Lukasz8181 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+interface ConnectInfo {
+  chainId: string;
+}
+
+BinanceChain.on('connect', handler: (connectInfo: ConnectInfo) => void);
